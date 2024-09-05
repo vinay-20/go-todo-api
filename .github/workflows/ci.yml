@@ -90,7 +90,7 @@ jobs:
       version: ${{ steps.changelog.outputs.version }}
 
     env:
-      PR_BRANCH: release-ci-${{ github.sha }}
+      PR_BRANCH: release-branch-${{ needs.changelog.outputs.version }}-${{ github.sha }}
 
     steps:
       - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
@@ -124,6 +124,9 @@ jobs:
     environment: dev
     if: github.event_name != 'pull_request' && needs.changelog.outputs.skipped == 'false'
     runs-on: ubuntu-latest
+
+    env:
+      PR_BRANCH: release-branch-${{ needs.changelog.outputs.version }}-${{ github.sha }}
 
     steps:
       - name: Checkout
