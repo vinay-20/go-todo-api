@@ -11,5 +11,5 @@ func main() {
 	env.Init()
 	database.Init()
 	router.Init()
-        fmt.print("Adding a print statement")
+        fmt.Print("Adding a print statement")
 }
