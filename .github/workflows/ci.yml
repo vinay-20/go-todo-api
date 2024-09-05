@@ -111,7 +111,7 @@ jobs:
           output-file: "CHANGELOG.md"
           version-file: .github/package.yaml
           create-summary: true
-          release-count: 10
+          release-count: 11
 
       - name: Create Changelog PR
         if: steps.changelog.outputs.skipped == 'false'
