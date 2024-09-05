@@ -1,9 +1,9 @@
-## 1.4.1 (2024-09-05)
+# 1.5.0 (2024-09-05)
 
 
-### Bug Fixes
+### Features
 
-* update in changelog release count ([#30](https://github.com/vinay-20/go-todo-api/issues/30)) ([9956282](https://github.com/vinay-20/go-todo-api/commit/99562824a071ac51c165027c9fb65f93c999b6a3))
+* update in release count to test breaking changes ([#33](https://github.com/vinay-20/go-todo-api/issues/33)) ([0653234](https://github.com/vinay-20/go-todo-api/commit/0653234290c44d702d7a0b4aa81e77464728994e))
 
 
 
