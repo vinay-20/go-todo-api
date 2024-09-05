@@ -166,7 +166,7 @@ jobs:
           tag_name: ${{ needs.changelog.outputs.tag }}
           prerelease: false
           draft: false
-          files: bin/*
+          #files: bin/*
           generate_release_notes: true
           name: ${{ needs.changelog.outputs.tag }}
           body: |
