@@ -1,9 +1,9 @@
-## 1.1.1 (2024-09-05)
+# 1.2.0 (2024-09-05)
 
 
-### Bug Fixes
+### Features
 
-* enabling output file for changelong ([#20](https://github.com/vinay-20/go-todo-api/issues/20)) ([f422a06](https://github.com/vinay-20/go-todo-api/commit/f422a0698e4d82c129643a868cd3003ff1b87450))
+* New print statement release ([#23](https://github.com/vinay-20/go-todo-api/issues/23)) ([3a4c926](https://github.com/vinay-20/go-todo-api/commit/3a4c926aab3831521672e47d4acef81a12d4b90c))
 
 
 
