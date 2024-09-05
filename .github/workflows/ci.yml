@@ -145,7 +145,7 @@ jobs:
 
       # approve the Changelog PR
       - name: Approve Changelog PR
-        if: steps.changelog.outputs.skipped == 'false'
+        if: needs.changelog.outputs.skipped == 'false'
         run: |
           gh pr review --approve ${{ env.PR_BRANCH }}
         env:
@@ -153,7 +153,7 @@ jobs:
 
       # Merge the Changelog PR
       - name: Merge Changelog PR
-        if: steps.changelog.outputs.skipped == 'false'
+        if: needs.changelog.outputs.skipped == 'false'
         run: |
           gh pr merge --squash --auto --delete-branch ${{ env.PR_BRANCH }}
         env:
@@ -166,7 +166,7 @@ jobs:
           tag_name: ${{ needs.changelog.outputs.tag }}
           prerelease: false
           draft: false
-          files: bin/*
+          #files: bin/*
           generate_release_notes: true
           name: ${{ needs.changelog.outputs.tag }}
           body: |
