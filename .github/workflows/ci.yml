@@ -107,7 +107,7 @@ jobs:
           git-user-email: "constantine[bot]@planview.com"
           git-branch: ${{ env.PR_BRANCH }}
           skip-git-pull: true
-          output-file: false
+          output-file: true
           version-file: .github/package.yaml
           create-summary: true
 
