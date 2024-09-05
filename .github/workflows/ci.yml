@@ -120,7 +120,6 @@ jobs:
 
       - name: Approve Changelog PR
         if: steps.changelog.outputs.skipped == 'false'
-        environment:
         run: |
           gh pr review --approve ${{ env.PR_BRANCH }}
         env:
