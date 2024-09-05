@@ -1,4 +1,5 @@
 package main
+import "fmt"
 
 import (
 	"go-todo-api/database"
@@ -10,4 +11,5 @@ func main() {
 	env.Init()
 	database.Init()
 	router.Init()
+        fmt.print("Adding a print statement")
 }
