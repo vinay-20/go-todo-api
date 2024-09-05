@@ -121,8 +121,7 @@ jobs:
   release:
     name: Release
     needs: changelog
-    environment:
-      name: dev
+    environment: dev
     if: github.event_name != 'pull_request' && needs.changelog.outputs.skipped == 'false'
     runs-on: ubuntu-latest
 
