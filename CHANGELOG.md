@@ -1,9 +1,16 @@
-# 1.6.0 (2024-09-05)
+# 2.0.0 (2024-09-06)
 
 
 ### Features
 
-* update in release count ([#35](https://github.com/vinay-20/go-todo-api/issues/35)) ([34fd391](https://github.com/vinay-20/go-todo-api/commit/34fd391f5b01ccd6f365cf3a7cbbdffdf46820b3))
+* change in release count ([#37](https://github.com/vinay-20/go-todo-api/issues/37)) ([c0f4952](https://github.com/vinay-20/go-todo-api/commit/c0f49520eb87bf60fcf885237c8695c31f388831))
+
+
+### BREAKING CHANGES
+
+* release counter update
+
+Co-authored-by: Vinay V <vinay.v@F400F7L7HN.local>
 
 
 
